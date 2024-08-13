@@ -28,13 +28,17 @@ sealed class DragReceiver : PointerManipulator
 
 sealed class Tester : MonoBehaviour
 {
+    public Transform _target = null;
+
     Queue<string> _lines = new Queue<string>();
 
     VisualElement UIRoot => GetComponent<UIDocument>().rootVisualElement;
 
     public void OnPointerDrag(Vector3 position, Vector3 delta)
     {
-        _lines.Enqueue($"{position} | {delta}");
+        _target.position += Vector3.Scale(delta, new Vector3(1, -1, 0) * 0.1f);
+
+        _lines.Enqueue($"position={position} | delta={delta}");
         while (_lines.Count > 20) _lines.Dequeue();
         UIRoot.Q<Label>("text-label").text = string.Join("\n", _lines.Reverse());
     }

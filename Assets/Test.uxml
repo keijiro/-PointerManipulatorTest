@@ -1,4 +1,4 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <engine:Label name="text-label" style="position: absolute; top: 14px; left: 14px; right: 14px; bottom: 14px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Roboto_Mono/static/RobotoMono-Thin.ttf?fileID=12800000&amp;guid=92b5ee16bd6a14043bf1f5494b4bab95&amp;type=3#RobotoMono-Thin&quot;); font-size: 12px;" />
+    <engine:Label name="text-label" style="position: absolute; top: 14px; left: 14px; right: 14px; bottom: 14px; color: rgb(255, 255, 255); -unity-font-definition: url(&quot;project://database/Assets/Roboto_Mono/static/RobotoMono-Thin.ttf?fileID=12800000&amp;guid=92b5ee16bd6a14043bf1f5494b4bab95&amp;type=3#RobotoMono-Thin&quot;); font-size: 10px;" />
     <engine:VisualElement name="empty-area" style="flex-grow: 1;" />
 </engine:UXML>
